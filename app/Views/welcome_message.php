@@ -220,7 +220,7 @@
 
     <div class="heroe">
 
-        <h1>Welcome to the Department of Tourism of Tanay Rizal</h1>
+        <h1>Welcome to Department of Tourism of Tanay Rizal</h1>
 
         <h2>Sample text</h2>
 
