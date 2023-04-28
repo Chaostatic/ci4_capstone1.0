@@ -41,6 +41,12 @@ $routes->get('views/food', 'Food::index');
 $routes->get('/aboutus', 'AboutUs::index');
 $routes->get('views/aboutus', 'AboutUs::index');
 
+ /*
+ * --------------------------------------------------------------------
+ *  routes
+ * --------------------------------------------------------------------
+ */
+
 
 $routes->get('views/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
