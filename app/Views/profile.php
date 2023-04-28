@@ -53,7 +53,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <title>Welcome to the Department of Tourism of Tanay, Rizal</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -65,12 +65,13 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
+   <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/profile">Dashboard</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Data Management</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url();?>logout!">Logout</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Attractions Management</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Management</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements Management</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Settings</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url();?>logout">Logout</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -87,7 +88,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Simple Sidebar</h1>
+                    <h1 class="mt-4"> Welcome </h1>
                     <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
                     <p>
                         Make sure to keep all page content within the

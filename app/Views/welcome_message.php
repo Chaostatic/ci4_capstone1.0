@@ -217,10 +217,15 @@
             </li>
         </ul>
     </div>
+    <div> <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> 
+            </div>
 
     <div class="heroe">
 
-        <h1>Welcome to Department of Tourism of Tanay Rizal</h1>
+        <h1>Welcome to the Department of Tourism of Tanay, Rizal</h1>
 
         <h2>Sample text</h2>
 
