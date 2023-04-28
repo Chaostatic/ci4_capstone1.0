@@ -43,7 +43,7 @@ $routes->get('views/aboutus', 'AboutUs::index');
 
 
 // We get a performance increase by specifying the default
-// route since we don't have to scan directories.
+// route since we dondirectories't have to scan .
 
 $routes->get('views/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
