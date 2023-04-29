@@ -31,6 +31,14 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::index');
+$routes->get('/attractions', 'Attractions::index'); 
+$routes->get('views/attractions', 'Attractions::index/attractions'); 
+$routes->get('/food', 'Food::index');
+$routes->get('views/food', 'Food::index');
+$routes->get('/aboutus', 'AboutUs::index');
+$routes->get('views/aboutus', 'AboutUs::index');
+
+
 $routes->get('views/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/', 'SignupController::index');
@@ -44,14 +52,8 @@ $routes->get('logout', 'ProfileController::logout');
 
 
 
-/*
- * --------------------------------------------------------------------
- * public routes
- * --------------------------------------------------------------------
- */
- $routes->get('views/attractions', 'Attractions::index');  
- $routes->get('views/food', 'Food::index');
- $routes->get('views/aboutus', 'AboutUs::index');
+
+
 
 
  

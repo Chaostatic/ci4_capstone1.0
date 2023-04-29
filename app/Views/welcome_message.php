@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Department of Tourism of Tanay, Rizal</title>
-    <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
 
     <!-- STYLES -->
 
@@ -62,8 +61,8 @@
         }
         header li.menu-item a:hover,
         header li.menu-item a:focus {
-            background-color: rgba(221, 72, 20, .2);
-            color: rgba(221, 72, 20, 1);
+            background-color: rgba(92, 151, 191, .2);
+            color: rgba(92, 151, 191, 1);
         }
         header .logo {
             float: left;
@@ -77,7 +76,7 @@
             font-weight: bold;
         }
         header .menu-toggle button {
-            background-color: rgba(221, 72, 20, .6);
+            background-color: rgba(92, 151, 191, .6);
             border: none;
             border-radius: 3px;
             color: rgba(255, 255, 255, 1);
@@ -92,7 +91,7 @@
         }
         header .menu-toggle button:hover,
         header .menu-toggle button:focus {
-            background-color: rgba(221, 72, 20, .8);
+            background-color: rgba(92, 151, 191, .8);
             color: rgba(255, 255, 255, .8);
         }
         header .heroe {
@@ -183,13 +182,15 @@
                 display: none;
             }
             header li.menu-item a {
-                background-color: rgba(221, 72, 20, .1);
+                background-color: rgba(92, 151, 191, .7);
             }
             header li.menu-item a:hover,
             header li.menu-item a:focus {
-                background-color: rgba(221, 72, 20, .7);
+                background-color: rgba(92, 151, 191, 1);
                 color: rgba(255, 255, 255, .8);
             }
+            
+        
         }
     </style>
 </head>
@@ -201,26 +202,50 @@
     <div class="menu">
         <ul>
             <li class="logo">
-                <a href="#" target="_blank">
-                    
-                </a>
+            <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
+                <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
+                <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
+                </a> 
             </li>
             <li class="menu-toggle">
                 <button onclick="toggleMenu();">&#9776;</button>
             </li>
-            <li class="menu-item hidden"><a href="#">Home</a></li>
-            <li class="menu-item hidden"><a href="views/attractions" target="">Attractions</a>
+            <li class="menu-item hidden"><a href="/home">Home</a></li>
+            <li class="menu-item hidden"><a href="/attractions" target="">Attractions</a>
             </li>
-            <li class="menu-item hidden"><a href="views/food" target="">Food</a></li>
-            <li class="menu-item hidden"><a href="views/aboutus" target="">About Us</a>
+            <li class="menu-item hidden"><a href="/food" target="">Food</a></li>
+            <li class="menu-item hidden"><a href="/aboutus" target="">About Us</a>
             <li class="menu-item hidden"><a href="views/signin" target="_blank">Log In</a>
             </li>
+            <div> <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> 
+            </div>
         </ul>
+        
     </div>
 
     <div class="heroe">
+    <script>
+            function display_ct5() {
+            var x = new Date()
+            var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
 
-        <h1>Welcome to Department of Tourism of Tanay Rizal</h1>
+            var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+            x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ":" + ampm;
+            document.getElementById('ct5').innerHTML = x1;
+              display_c5();
+             }
+            function display_c5(){
+              var refresh=1000; // Refresh rate in milli seconds
+              mytime=setTimeout('display_ct5()',refresh)
+            }
+            display_c5()
+    </script>
+    <span id='ct5' style="background-color:darkgrey"></span>
+
+        <h1>Welcome to the Department of Tourism of Tanay, Rizal</h1>
 
         <h2>Sample text</h2>
 

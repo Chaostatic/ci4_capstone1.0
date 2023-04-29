@@ -9,8 +9,8 @@ class Attractions extends BaseController
 {
       public function index()
     {
-      
-      echo view('attractions');
+      echo view('welcome_message');
+      return view('attractions');
 
     }
 }
