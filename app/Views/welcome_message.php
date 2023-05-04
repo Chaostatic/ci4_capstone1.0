@@ -192,10 +192,6 @@
             
         
         }
-        .img-box{
-            margin: 150px auto;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -250,14 +246,28 @@
     <span id='ct5' style="background-color:darkgrey"></span>
 
         <h1>Welcome to the Department of Tourism of Tanay, Rizal</h1>
+
+        <h2>Sample text</h2>
+
+        
+
     </div>
 
 </header>
+
 <!-- CONTENT -->
+
 <section>
-<div class="img-box">
-            <iframe width="1080px" height="600" frameborder="0" src="https://momento360.com/e/u/b672e8cab1cd4f6b87584613d0f5998d?utm_campaign=embed&utm_source=other&heading=9.31&pitch=8.01&field-of-view=75&size=medium&autoplay-annotations=true&display-plan=true"></iframe>
-</div>
+
+    <h1>About this page</h1>
+
+    <p>This page would be the home phage.</p>
+
+    <p>It will include some information for the news and announcement.</p>
+
+
+
+
 </section>
 
 <div class="further">
@@ -270,6 +280,7 @@
 
 
     </section>
+
 </div>
 
 <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
