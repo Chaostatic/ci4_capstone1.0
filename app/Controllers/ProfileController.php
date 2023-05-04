@@ -14,8 +14,9 @@ class ProfileController extends Controller
     public function logout()
     {
         
-         $this->session->unset_userdata('email');
-         return redirect(('home'));
+        $session = session();
+        $this->session->sess_destroy();
+        redirect('/home');
     }    
 
 
