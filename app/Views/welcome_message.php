@@ -5,6 +5,7 @@
     <title>Department of Tourism of Tanay, Rizal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
+    <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
 
     <!-- STYLES -->
 
@@ -63,6 +64,8 @@
         header li.menu-item a:focus {
             background-color: rgba(92, 151, 191, .2);
             color: rgba(92, 151, 191, 1);
+            background-color: rgba(92, 151, 191, .2);
+            color: rgba(92, 151, 191, 1);
         }
         header .logo {
             float: left;
@@ -76,6 +79,7 @@
             font-weight: bold;
         }
         header .menu-toggle button {
+            background-color: rgba(92, 151, 191, .6);
             background-color: rgba(92, 151, 191, .6);
             border: none;
             border-radius: 3px;
@@ -91,6 +95,7 @@
         }
         header .menu-toggle button:hover,
         header .menu-toggle button:focus {
+            background-color: rgba(92, 151, 191, .8);
             background-color: rgba(92, 151, 191, .8);
             color: rgba(255, 255, 255, .8);
         }
@@ -183,12 +188,16 @@
             }
             header li.menu-item a {
                 background-color: rgba(92, 151, 191, .7);
+                background-color: rgba(92, 151, 191, .7);
             }
             header li.menu-item a:hover,
             header li.menu-item a:focus {
                 background-color: rgba(92, 151, 191, 1);
+                background-color: rgba(92, 151, 191, 1);
                 color: rgba(255, 255, 255, .8);
             }
+            
+        
             
         
         }
@@ -206,17 +215,26 @@
                 <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
                 <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
                 </a> 
+            <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
+                <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
+                <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
+                </a> 
             </li>
             <li class="menu-toggle">
                 <button onclick="toggleMenu();">&#9776;</button>
             </li>
             <li class="menu-item hidden"><a href="/home">Home</a></li>
             <li class="menu-item hidden"><a href="/attractions" target="">Attractions</a>
+            <li class="menu-item hidden"><a href="/home">Home</a></li>
+            <li class="menu-item hidden"><a href="/attractions" target="">Attractions</a>
             </li>
+            <li class="menu-item hidden"><a href="/food" target="">Food</a></li>
+            <li class="menu-item hidden"><a href="/aboutus" target="">About Us</a>
             <li class="menu-item hidden"><a href="/food" target="">Food</a></li>
             <li class="menu-item hidden"><a href="/aboutus" target="">About Us</a>
             <li class="menu-item hidden"><a href="views/signin" target="_blank">Log In</a>
             </li>
+            <div> <form class="d-flex">
             <div> <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -230,6 +248,9 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
                 </form> 
             </div>
+        </ul>
+        
+    </div>
 
     <div class="heroe">
     <script>
@@ -266,7 +287,7 @@
 
     <h1>About this page</h1>
 
-    <p>This page would be the home page.</p>
+    <p>This page would be the home phage.</p>
 
     <p>It will include some information for the news and announcement.</p>
 

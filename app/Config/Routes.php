@@ -47,6 +47,8 @@ $routes->get('views/aboutus', 'AboutUs::index');
  * --------------------------------------------------------------------
  */
 
+// We get a performance increase by specifying the default
+// route since we dondirectories't have to scan .
 
 $routes->get('/attractions', 'Attractions::index'); 
 $routes->get('views/attractions', 'Attractions::index/attractions'); 
