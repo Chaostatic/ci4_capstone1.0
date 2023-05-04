@@ -214,11 +214,7 @@
             <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
                 <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
                 <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
-                </a> 
-            <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
-                <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
-                <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
-                </a> 
+                
             </li>
             <li class="menu-toggle">
                 <button onclick="toggleMenu();">&#9776;</button>
@@ -242,15 +238,6 @@
             </div>
         </ul>
         
-    </div>
-    <div> <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> 
-            </div>
-        </ul>
-        
-    </div>
 
     <div class="heroe">
     <script>
