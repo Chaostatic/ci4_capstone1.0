@@ -50,6 +50,14 @@ $routes->get('views/aboutus', 'AboutUs::index');
 // We get a performance increase by specifying the default
 // route since we dondirectories't have to scan .
 
+$routes->get('/attractions', 'Attractions::index'); 
+$routes->get('views/attractions', 'Attractions::index/attractions'); 
+$routes->get('/food', 'Food::index');
+$routes->get('views/food', 'Food::index');
+$routes->get('/aboutus', 'AboutUs::index');
+$routes->get('views/aboutus', 'AboutUs::index');
+
+
 $routes->get('views/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/', 'SignupController::index');
@@ -58,7 +66,7 @@ $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::sto
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
-$routes->get('logout', 'ProfileController::logout');
+$routes->get('/logout', 'ProfileController::logout');
 
 
 

@@ -8,7 +8,9 @@
     <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
   </head>
   <body>
-  <div class ="container"> <img src="public/images/tanayheader.jpg" alt="Tanay" width="1000" height="500"> </div>
+
+  
+  <div class ="container"> <img src="/images/tanayheader.jpg" alt="Tanay" width="1000" height="500"> </div>
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-5">

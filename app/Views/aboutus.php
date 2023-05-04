@@ -316,3 +316,96 @@
 
 </body>
 </html>
+
+
+<script>
+            function display_ct5() {
+            var x = new Date()
+            var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+
+            var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+            x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ":" + ampm;
+            document.getElementById('ct5').innerHTML = x1;
+              display_c5();
+             }
+            function display_c5(){
+              var refresh=1000; // Refresh rate in milli seconds
+              mytime=setTimeout('display_ct5()',refresh)
+            }
+            display_c5()
+    </script>
+    <span id='ct5' style="background-color:darkgrey"></span>
+        
+        <h1>Welcome to the Department of Tourism of Tanay, Rizal</h1>
+
+        <h2>Attractions</h2>
+
+        
+
+    </div>
+
+</header>
+
+<!-- CONTENT -->
+
+<section>
+
+    <h1>About this page</h1>
+
+    <p>This page would be the about us page.</p>
+
+    <p>It will include some information about the Department of Tourism of Tanay, Rizal. Vision, Mission etc...</p>
+
+
+
+
+</section>
+
+<div class="further">
+
+    <section>
+
+        <h1>Contact us</h1>
+
+        
+
+
+    </section>
+
+</div>
+
+<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+
+<footer>
+    <div class="environment">
+
+        <p>Page rendered in {elapsed_time} seconds</p>
+
+        
+
+    </div>
+
+    <div class="copyrights">
+
+        <p>&copy; <?= date('Y') ?> Capstone 1</p>
+
+    </div>
+
+</footer>
+
+<!-- SCRIPTS -->
+
+<script>
+    function toggleMenu() {
+        var menuItems = document.getElementsByClassName('menu-item');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.classList.toggle("hidden");
+        }
+    }
+</script>
+
+<!-- -->
+
+</body>
+</html>

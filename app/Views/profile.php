@@ -53,7 +53,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Welcome to the Department of Tourism of Tanay, Rizal</title>
+        <title>Department of Tourism of Tanay, Rizal Administrator Dashboard</title>
         <!-- Favicon-->
         <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
         <!-- Core theme CSS (includes Bootstrap)-->

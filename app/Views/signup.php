@@ -8,6 +8,12 @@
     <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
 </head>
 <body>
+<li class="logo">
+            <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
+                <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
+                <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
+                
+            </li>
     <div class="container mt-5">
         <div class="row justify-content-md-center">
             <div class="col-5">
@@ -27,7 +33,7 @@
                     <div class="form-group mb-3">
                         <input type="password" name="password" placeholder="Password" class="form-control" >
                     </div>
-                    <div class="form-group mb-3">
+                    <div class="form-group` mb-3">
                         <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control" >
                     </div>
                     <div class="d-grid">
