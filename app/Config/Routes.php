@@ -66,7 +66,7 @@ $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::sto
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
-$routes->get('logout', 'ProfileController::logout');
+$routes->get('/logout', 'ProfileController::logout');
 
 
 
