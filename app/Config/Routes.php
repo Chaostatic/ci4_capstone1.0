@@ -27,10 +27,27 @@ $routes->set404Override();
  * --------------------------------------------------------------------
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
+ /*
+ * --------------------------------------------------------------------
+ * public routes
+ * --------------------------------------------------------------------
+ */
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::index');
+$routes->get('/attractions', 'Attractions::index'); 
+$routes->get('views/attractions', 'Attractions::index/attractions'); 
+$routes->get('/food', 'Food::index');
+$routes->get('views/food', 'Food::index');
+$routes->get('/aboutus', 'AboutUs::index');
+$routes->get('views/aboutus', 'AboutUs::index');
+
+ /*
+ * --------------------------------------------------------------------
+ *  routes
+ * --------------------------------------------------------------------
+ */
+
+
 $routes->get('/attractions', 'Attractions::index'); 
 $routes->get('views/attractions', 'Attractions::index/attractions'); 
 $routes->get('/food', 'Food::index');
