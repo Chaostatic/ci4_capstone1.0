@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Department Of Tourism of Tanay, Rizal</title>
+    <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
   </head>
   <body>
   <div class ="container"> <img src="public/images/tanayheader.jpg" alt="Tanay" width="1000" height="500"> </div>

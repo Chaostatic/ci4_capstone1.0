@@ -7,15 +7,15 @@ class ProfileController extends Controller
     public function index()
     {
         $session = session();
-        echo view('profile');
+        return view('profile');
         echo "Hello : ".$session->get('name');
     }
 
     public function logout()
     {
-        
-         $this->session->unset_userdata('email');
-         return redirect(('home'));
+        $session = session();
+        $this->session->sess_destroy();
+        redirect('home');
     }    
 
 
