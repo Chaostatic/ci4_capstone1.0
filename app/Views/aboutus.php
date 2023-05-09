@@ -208,10 +208,10 @@
                 <button onclick="toggleMenu();">&#9776;</button>
             </li>
             <li class="menu-item hidden"><a href="/home">Home</a></li>
-            <li class="menu-item hidden"><a href="views/attractions" target="">Attractions</a>
+            <li class="menu-item hidden"><a href="/attractions" target="">Attractions</a>
             </li>
-            <li class="menu-item hidden"><a href="views/food" target="">Food</a></li>
-            <li class="menu-item hidden"><a href="views/aboutus" target="">About Us</a>
+            <li class="menu-item hidden"><a href="/food" target="">Food</a></li>
+            <li class="menu-item hidden"><a href="/aboutus" target="">About Us</a>
             <li class="menu-item hidden"><a href="views/signin" target="_blank">Log In</a>
             </li>
             <div> <form class="d-flex">
