@@ -9,7 +9,7 @@ class AttractionsManagement extends BaseController
 {
       public function index()
     {
-      echo view('profile');
+      //echo view('profile');
       return view('/admin/attractionsManagement.php');
 
     }

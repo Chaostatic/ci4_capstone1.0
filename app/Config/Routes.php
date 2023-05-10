@@ -56,6 +56,8 @@ $routes->get('/food', 'Food::index');
 $routes->get('views/food', 'Food::index');
 $routes->get('/aboutus', 'AboutUs::index');
 $routes->get('views/aboutus', 'AboutUs::index');
+$routes->get('/logout', 'LogoutController::logout');
+$routes->get('/views/admin/logout', 'LogoutController::logout');
 
 
 $routes->get('views/signin', 'SigninController::index');
@@ -66,7 +68,7 @@ $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::sto
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
-$routes->get('/logout', 'ProfileController::logout');
+
 
 
 

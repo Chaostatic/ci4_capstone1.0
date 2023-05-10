@@ -10,13 +10,13 @@ class ProfileController extends Controller
         return view('profile');
         echo "Hello : ".$session->get('name');
     }
-
-    public function logout()
-    {
+    public function logout(){
         $session = session();
-        $this->session->sess_destroy();
-        redirect('home');
-    }    
+        $session->destroy();
+        return redirect()->to('/welcome_message');
+
+    }
+
 
 
 }

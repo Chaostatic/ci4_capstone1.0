@@ -2,15 +2,11 @@
 
 namespace App\Controllers;
 
-class AboutUs extends BaseController
+class Logout extends BaseController
 {
     public function index()
     {
-        
-        return view('aboutus');
+        return view('logout');
         
     }
-
-  
-
 }

@@ -11,7 +11,7 @@ class FoodManagement extends BaseController
     {
         $data = [];
         
-        echo view('profile');
+        //echo view('profile');
         return view('/admin/foodManagement.php');
 
 

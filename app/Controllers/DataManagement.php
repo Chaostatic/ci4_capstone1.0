@@ -9,7 +9,7 @@ class DataManagement extends BaseController
 {
       public function index()
     {
-        echo view('profile');
+        //echo view('profile');
         return view('/admin/dataManagement.php');
 
     }
