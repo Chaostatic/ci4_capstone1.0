@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Department of Tourism of Tanay, Rizal Administrator Dashboard</title>
+        <title>Tourist Centre
+        </title>
         <!-- Favicon-->
         <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -18,12 +19,11 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
                 <div class="list-group list-group-flush">
-                <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Data</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo base_url();?>/logout">Logout</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/logout.php');?>">Logout</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -40,15 +40,8 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4"> Welcome to Profile</h1>
+                    <h1 class="mt-4">Admin Dashboard</h1>
                     <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                    <p>
-                        Make sure to keep all page content within the
-                        <code>#page-content-wrapper</code>
-                        . The top navbar is optional, and just for demonstration. Just create an element with the
-                        <code>#sidebarToggle</code>
-                        ID which will toggle the menu when clicked.
-                    </p>
                 </div>
             </div>
         </div>

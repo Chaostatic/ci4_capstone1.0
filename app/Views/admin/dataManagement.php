@@ -18,7 +18,7 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
                 <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Data </a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Profile </a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
@@ -39,8 +39,8 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4"> Data Manage </h1>
-                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                    <h1 class="mt-4"> Profile Settings </h1>
+                    <img src="/images/maintenance.png">
                     
                 </div>
             </div>
