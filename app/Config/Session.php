@@ -14,7 +14,7 @@ class Session extends BaseConfig
      * --------------------------------------------------------------------------
      *
      * The session storage driver to use:
-     CodeIgniter\Session\Handlers\FileHandler`
+     * - `CodeIgniter\Session\Handlers\FileHandler`
      * - `CodeIgniter\Session\Handlers\DatabaseHandler`
      * - `CodeIgniter\Session\Handlers\MemcachedHandler`
      * - `CodeIgniter\Session\Handlers\RedisHandler`

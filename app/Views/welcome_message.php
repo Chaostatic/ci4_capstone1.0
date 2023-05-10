@@ -5,6 +5,9 @@
     <title>Department of Tourism of Tanay, Rizal</title>
     <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/panolens.min.js"></script>
   
 
 
@@ -199,9 +202,11 @@
             }
             
         
-            
-        
         }
+        .pano-image{
+                width: 100%;
+                height: 600px;
+            }
     </style>
 </head>
 <body>
@@ -254,12 +259,7 @@
     </script>
     <span id='ct5' style="background-color:darkgrey"></span>
 
-        <h1>Welcome to the Department of Tourism of Tanay, Rizal</h1>
-
-        <h2>Sample text</h2>
-
-        
-
+        <h1>Welcome to the Department of Tourism Tanay, Rizal</h1>
     </div>
 
 </header>
@@ -267,16 +267,14 @@
 <!-- CONTENT -->
 
 <section>
-
-    <h1>About this page</h1>
-
-    <p>This page would be the home phage.</p>
-
-    <p>It will include some information for the news and announcement.</p>
+<!--pchen66.github.io
+    
+<div class="pano-image"></div>-->
 
 
-
-
+<!-- https://momento360.com -->
+<iframe height="350px" width="100%" allowfullscreen="true" 
+src="https://momento360.com/e/u/b672e8cab1cd4f6b87584613d0f5998d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=100&size=medium&autoplay-annotations=true&display-plan=true"> </iframe>
 </section>
 
 <div class="further">
@@ -284,10 +282,6 @@
     <section>
 
         <h1>About Us</h1>
-
-        
-
-
     </section>
 
 </div>
