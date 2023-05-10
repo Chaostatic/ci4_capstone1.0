@@ -61,8 +61,10 @@
         }
         header li.menu-item a:hover,
         header li.menu-item a:focus {
-            background-color: rgba(221, 72, 20, .2);
-            color: rgba(221, 72, 20, 1);
+            background-color: rgba(92, 151, 191, .2);
+            color: rgba(92, 151, 191, 1);
+            background-color: rgba(92, 151, 191, .2);
+            color: rgba(92, 151, 191, 1);
         }
         header .logo {
             float: left;
@@ -76,7 +78,8 @@
             font-weight: bold;
         }
         header .menu-toggle button {
-            background-color: rgba(221, 72, 20, .6);
+            background-color: rgba(92, 151, 191, .6);
+            background-color: rgba(92, 151, 191, .6);
             border: none;
             border-radius: 3px;
             color: rgba(255, 255, 255, 1);
@@ -91,7 +94,8 @@
         }
         header .menu-toggle button:hover,
         header .menu-toggle button:focus {
-            background-color: rgba(221, 72, 20, .8);
+            background-color: rgba(92, 151, 191, .8);
+            background-color: rgba(92, 151, 191, .8);
             color: rgba(255, 255, 255, .8);
         }
         header .heroe {
@@ -182,11 +186,13 @@
                 display: none;
             }
             header li.menu-item a {
-                background-color: rgba(221, 72, 20, .1);
+                background-color: rgba(92, 151, 191, .7);
+                background-color: rgba(92, 151, 191, .7);
             }
             header li.menu-item a:hover,
             header li.menu-item a:focus {
-                background-color: rgba(221, 72, 20, .7);
+                background-color: rgba(92, 151, 191, 1);
+                background-color: rgba(92, 151, 191, 1);
                 color: rgba(255, 255, 255, .8);
             }
         }
