@@ -60,6 +60,10 @@ $routes->get('/aboutus', 'AboutUs::index');
 $routes->get('views/aboutus', 'AboutUs::index');
 $routes->get('logout', 'LogoutController::index');
 $routes->get('/logout', 'LogoutController::index/welcome_message');
+$routes->get('/logout', 'LogoutController::index');
+$routes->get('views/admin/logout.php', 'LogoutController::index');
+$routes->get('/logout', 'LogoutController::index');
+$routes->get('views/admin/logout', 'LogoutController::index');
 
 
 $routes->get('views/signin', 'SigninController::index');
