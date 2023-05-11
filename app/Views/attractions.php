@@ -274,6 +274,19 @@
 
 </section>
 
+<section>
+
+    <h1> <a href="/attractions/daranakfalls" target="">Daranak Falls</a></h1>
+
+    <p>This page would be the attractions page.</p>
+
+    <p>It will include some information for the attractions on Tanay.</p>
+
+
+
+
+</section>
+
 <div class="further">
 
     <section>

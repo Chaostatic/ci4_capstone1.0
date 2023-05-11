@@ -281,7 +281,7 @@ src="https://momento360.com/e/u/b672e8cab1cd4f6b87584613d0f5998d?utm_campaign=em
 
     <section>
 
-        <h1>About Us</h1>
+        <h1>This would be the home page</h1>
     </section>
 
 </div>

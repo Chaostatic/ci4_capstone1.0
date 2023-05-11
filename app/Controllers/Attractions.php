@@ -13,4 +13,11 @@ class Attractions extends BaseController
       return view('attractions');
 
     }
+
+    public function daranakfalls()
+    {
+      
+      return view('attraction/daranakfalls');
+
+    }
 }

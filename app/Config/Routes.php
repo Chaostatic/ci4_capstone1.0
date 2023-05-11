@@ -52,6 +52,8 @@ $routes->get('views/aboutus', 'AboutUs::index');
 
 $routes->get('/attractions', 'Attractions::index'); 
 $routes->get('views/attractions', 'Attractions::index/attractions'); 
+$routes->get('/attractions/daranakfalls', 'Attractions::daranakfalls');
+$routes->get('views/attractions/daranakfalls', 'Attractions::index/daranakfalls');
 $routes->get('/food', 'Food::index');
 $routes->get('views/food', 'Food::index');
 $routes->get('/aboutus', 'AboutUs::index');
