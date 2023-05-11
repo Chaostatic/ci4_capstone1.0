@@ -22,7 +22,7 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url();?>logout">Logout</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/logout.php">Logout</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
