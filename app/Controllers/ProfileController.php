@@ -13,7 +13,7 @@ class ProfileController extends Controller
     public function logout(){
         $session = session();
         $session->destroy();
-        return redirect()->to('/welcome_message');
+        return redirect()->to('/');
 
     }
 
