@@ -14,7 +14,7 @@ class LogoutController extends BaseController
 
     $session = session();
     $session->destroy();
-    return redirect()->to('/welcome_message');
+    return redirect()->to('/');
 
 
 }
