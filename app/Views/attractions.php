@@ -206,9 +206,7 @@
     <div class="menu">
         <ul>
             <li class="logo">
-                <a href="#" target="_blank">
-                    
-                </a>
+                <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
             </li>
             <li class="menu-toggle">
                 <button onclick="toggleMenu();">&#9776;</button>
