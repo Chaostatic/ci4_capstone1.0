@@ -216,7 +216,7 @@
     <div class="menu">
         <ul>
             <li class="logo">
-            <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
+            <a href="/home" target="/home"><img src='/images/logo-removebg-preview.png' width="80" height="75"></a>
                 <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
                 <!--<svg role="images/logo-removebg-preview.png" aria-label="Department Of Tourism of Tanay, Rizal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" height="44"><path fill="#dd4814" d="M10 10"/></svg> -->
                 
