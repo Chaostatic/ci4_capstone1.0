@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tourist Centre
-        </title>
+            <title>Tourist Centre</title>
         <!-- Favicon-->
         <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
         <!-- Core theme CSS (includes Bootstrap)-->
