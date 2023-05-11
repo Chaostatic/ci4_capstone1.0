@@ -58,11 +58,12 @@ $routes->get('/food', 'Food::index');
 $routes->get('views/food', 'Food::index');
 $routes->get('/aboutus', 'AboutUs::index');
 $routes->get('views/aboutus', 'AboutUs::index');
-$routes->get('/admin/logout', 'LogoutController::index');
-$routes->get('views/admin/logout', 'LogoutController::index');
+$routes->get('/logout', 'LogoutController::index');
+$routes->get('views/admin/logout', 'LogoutController::logout');
 
 
 $routes->get('views/signin', 'SigninController::index');
+$routes->get('attractions/views/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/', 'SignupController::index');
 $routes->get('/signup', 'SignupController::index');
