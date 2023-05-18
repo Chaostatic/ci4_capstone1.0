@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Data Management</title>
+        <title>Profile Settings</title>
         <!-- Favicon-->
         <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -18,7 +18,7 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
                 <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Profile </a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php" class="fa fa-fw fa-home">Profile </a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
@@ -46,6 +46,7 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="/js/scripts.js"></script>
