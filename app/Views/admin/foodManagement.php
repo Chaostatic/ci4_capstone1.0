@@ -40,7 +40,15 @@
                 <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Food Destination!</h1>
-                    <img src="/images/maintenance.png">
+                                <?php foreach ($errors as $error): ?>
+                                    <li><?= esc($error) ?></li>
+                                <?php endforeach ?>
+
+                        <?= form_open_multipart('upload/upload') ?>
+                            <input type="file" name="userfile" size="1900000">
+                            <br><br>
+                            <input type="submit" value="upload">
+                        </form>
                 </div>
             </div>
         </div>

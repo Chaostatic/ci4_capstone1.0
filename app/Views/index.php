@@ -286,13 +286,13 @@ src="https://momento360.com/e/u/b672e8cab1cd4f6b87584613d0f5998d?utm_campaign=em
 <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
 <footer>
-    <div class="environment">
+    <!--<div class="environment">
 
         <p>Page rendered in {elapsed_time} seconds</p>
 
         
 
-    </div>
+    </div>-->
 
     <div class="copyrights">
 

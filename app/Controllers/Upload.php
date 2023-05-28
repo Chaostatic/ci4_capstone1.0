@@ -10,7 +10,7 @@ class Upload extends BaseController
 
     public function index()
     {
-        return view('upload_form', ['errors' => []]);
+        return view('/views/foodManagement', ['errors' => []]);
     }
 
     public function upload()
@@ -22,7 +22,7 @@ class Upload extends BaseController
                     'uploaded[userfile]',
                     'is_image[userfile]',
                     'mime_in[userfile,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
-                    'max_size[userfile,100]',
+                    'max_size[userfile,1900000]',
                     'max_dims[userfile,1024,768]',
                 ],
             ],

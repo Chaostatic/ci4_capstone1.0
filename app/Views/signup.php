@@ -8,6 +8,21 @@
     <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function(){
+            swal({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success",
+                button: "OK DONE!",
+                });
+                 <?php if(session()->getFlashdata('status')) {?>
+
+                 <?php }?>
+        });
+    </script>
+    
 <li class="logo">
             <a href="/home" target="/home"><img src='images/logo-removebg-preview.png' width="80" height="75"></a>
                 <!-- <a href="/home" target="/home" img src='images/logo-removebg-preview.png'> -->
