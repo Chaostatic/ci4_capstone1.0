@@ -6,25 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Profile Settings</title>
+        <title>Admin accounts</title>
         <!-- Favicon-->
         <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/css/styles.css" rel="stylesheet" />
+        
     </head>
     <body>
+        <?php $index=0; ?>
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
-                <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php" class="fa fa-fw fa-home">Profile </a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="logout">Logout</a>
-                </div>
-            </div>
+            <?php include(APPPATH . 'Views/partials/sidebar.php'); ?>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
                 <!-- Top navigation-->
@@ -39,8 +31,25 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4"> Profile Settings </h1>
-                    <img src="/images/maintenance.png">
+                    <h1 class="mt-4"> Admin accounts </h1>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Created At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($users as $user): ?>
+                                <tr>
+                                    <td><?= $user['name']; ?></td>
+                                    <td><?= $user['email']; ?></td>
+                                    <td><?= $user['created_at']; ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                     
                 </div>
             </div>

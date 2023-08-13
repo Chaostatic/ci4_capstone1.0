@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,24 +6,12 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Food Tourism</title>
-        <!-- Favicon-->
-        <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/styles.css" rel="stylesheet" />
+        <?php include(APPPATH . 'Views/partials/header.php'); ?>
     </head>
     <body>
+        <?php $index=2; ?>
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
-                <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Profile</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="logout">Logout</a>
-                </div>
-            </div>
+            <?php include(APPPATH . 'Views/partials/sidebar.php'); ?>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
                 <!-- Top navigation-->
@@ -37,24 +24,93 @@
                         </div>
                     </div>
                 </nav>
-                <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Food Destination!</h1>
-                                <?php foreach ($errors as $error): ?>
-                                    <li><?= esc($error) ?></li>
+                    <h1 class="mt-4"> Food Tourism Management </h1>
+                    <?php if (session()->has('messages')) : ?>
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <ul>
+                                <?php foreach (session('messages') as $messages) : ?>
+                                    <li><?= $messages ?></li>
                                 <?php endforeach ?>
-
-                        <?= form_open_multipart('upload/upload') ?>
-                            <input type="file" name="userfile" size="1900000">
-                            <br><br>
-                            <input type="submit" value="upload">
-                        </form>
+                            </ul>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php endif ?>
+                    <a href="<?= site_url('food-tourism/create'); ?>" class="btn btn-success mb-3">Add New Food Tourism</a>
+                    <table id="table" class="w-100 table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Date Posted</th>
+                            <th>Visible</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($foods as $food): ?>
+                            <tr>
+                                <td><?= $food['id']; ?></td>
+                                <td><?= $food['name']; ?></td>
+                                <td><?= $food['created_at']; ?></td>
+                                <td><?= $food['visible']; ?></td>
+                                <td>
+                                    <button class="btn btn-primary edit-button" data-id="<?= $food['id'] ?>">Edit</button>
+                                    <button class="btn btn-danger delete-button" data-id="<?= $food['id'] ?>">Delete</button>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/js/scripts.js"></script>
+        <?php include(APPPATH . 'Views/partials/scripts.php'); ?>
+        <script>
+            $(document).ready(function () {
+                const table = $('#table').DataTable();
+
+                $(document).on('click', '.edit-button', function () {
+                    var id = $(this).data('id');
+                    window.location.href = '<?= site_url('food-tourism/edit') ?>/' + id;
+                });
+
+                table.on('click', '.delete-button', function () {
+                    var id = $(this).data('id');
+                    bootbox.confirm({
+                        message: "Are you sure you want to delete this record?",
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-danger'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-secondary'
+                            }
+                        },
+                        callback: function (result) {
+                            if (result) {
+                                // User confirmed, perform AJAX delete request
+                                $.ajax({
+                                    url: '<?= site_url('food-tourism/delete') ?>/' + id,
+                                    method: 'POST',
+                                    success: function (response) {
+                                        // Handle success, such as refreshing the table
+                                        location.reload();
+                                    },
+                                    error: function (xhr, status, error) {
+                                        // Handle error
+                                        console.error(error);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                });
+            });
+
+            
+        </script>
     </body>
 </html>

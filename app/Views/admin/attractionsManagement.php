@@ -6,25 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-            <title>Tourist Centre</title>
-        <!-- Favicon-->
-        <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/styles.css" rel="stylesheet" />
+        <title>Tourist Centre</title>
+        <?php include(APPPATH . 'Views/partials/header.php'); ?>
     </head>
     <body>
+        <?php $index=1; ?>
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Admin Dashboard</div>
-                <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/dataManagement.php">Profile</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/attractionsManagement.php">Tourist Centre</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/foodManagement.php">Food Tourism</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/views/admin/newsManagement.php">News and Announcements</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="logout">Logout</a>
-                </div>
-            </div>
+            <?php include(APPPATH . 'Views/partials/sidebar.php'); ?>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
                 <!-- Top navigation-->
@@ -39,14 +27,92 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4"> Tourist Update </h1>
-                    <img src="/images/maintenance.png">
+                    <h1 class="mt-4"> Tourist Centre Management </h1>
+                    <?php if (session()->has('messages')) : ?>
+                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                            <ul>
+                                <?php foreach (session('messages') as $messages) : ?>
+                                    <li><?= $messages ?></li>
+                                <?php endforeach ?>
+                            </ul>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php endif ?>
+                    <a href="<?= site_url('tourist-centre/create'); ?>" class="btn btn-success mb-3">Add New Tourist Centre</a>
+                    <table id="table" class="w-100 table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Date Posted</th>
+                            <th>Visible</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($touristCentres as $touristCentre): ?>
+                            <tr>
+                                <td><?= $touristCentre['id']; ?></td>
+                                <td><?= $touristCentre['name']; ?></td>
+                                <td><?= $touristCentre['created_at']; ?></td>
+                                <td><?= $touristCentre['visible']; ?></td>
+                                <td>
+                                    <button class="btn btn-primary edit-button" data-id="<?= $touristCentre['id'] ?>">Edit</button>
+                                    <button class="btn btn-danger delete-button" data-id="<?= $touristCentre['id'] ?>">Delete</button>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/js/scripts.js"></script>
+        <?php include(APPPATH . 'Views/partials/scripts.php'); ?>
+        <script>
+            $(document).ready(function () {
+                const table = $('#table').DataTable();
+
+                $(document).on('click', '.edit-button', function () {
+                    var id = $(this).data('id');
+                    window.location.href = '<?= site_url('tourist-centre/edit') ?>/' + id;
+                });
+
+                table.on('click', '.delete-button', function () {
+                    var id = $(this).data('id');
+                    bootbox.confirm({
+                        message: "Are you sure you want to delete this record?",
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-danger'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'btn-secondary'
+                            }
+                        },
+                        callback: function (result) {
+                            if (result) {
+                                // User confirmed, perform AJAX delete request
+                                $.ajax({
+                                    url: '<?= site_url('tourist-centre/delete') ?>/' + id,
+                                    method: 'POST',
+                                    success: function (response) {
+                                        // Handle success, such as refreshing the table
+                                        location.reload();
+                                    },
+                                    error: function (xhr, status, error) {
+                                        // Handle error
+                                        console.error(error);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                });
+            });
+
+            
+        </script>
     </body>
 </html>

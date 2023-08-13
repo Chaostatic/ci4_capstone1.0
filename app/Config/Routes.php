@@ -27,26 +27,25 @@ $routes->set404Override();
  * --------------------------------------------------------------------
  */
 
- /*
+/*
  * --------------------------------------------------------------------
  * public routes
  * --------------------------------------------------------------------
  */
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::index');
-$routes->get('/attractions', 'Attractions::index'); 
-$routes->get('views/attractions', 'Attractions::index/attractions'); 
-$routes->get('/food', 'Food::index');
-$routes->get('views/food', 'Food::index');
+$routes->get('/attractions', 'Attractions::index');
+$routes->get('views/attractions', 'Attractions::index/attractions');
+$routes->get('/food', 'FoodController::thumbnail');
 $routes->get('/aboutus', 'AboutUs::index');
 $routes->get('views/aboutus', 'AboutUs::index');
 
-$routes->get('upload', 'Upload::index'); 
+$routes->get('upload', 'Upload::index');
 $routes->post('upload/upload', 'Upload::upload');
 
 
 
- /*
+/*
  * --------------------------------------------------------------------
  *  routes
  * --------------------------------------------------------------------
@@ -55,8 +54,8 @@ $routes->post('upload/upload', 'Upload::upload');
 // We get a performance increase by specifying the default
 // route since we dondirectories't have to scan .
 
-$routes->get('/attractions', 'Attractions::index'); 
-$routes->get('views/attractions', 'Attractions::index/attractions'); 
+$routes->get('/attractions', 'Attractions::index');
+$routes->get('views/attractions', 'Attractions::index/attractions');
 $routes->get('/attractions/daranakfalls', 'Attractions::daranakfalls');
 $routes->get('views/attractions/daranakfalls', 'Attractions::index/daranakfalls');
 $routes->get('/food', 'Food::index');
@@ -73,13 +72,14 @@ $routes->get('views/admin/logout', 'LogoutController::index');
 
 $routes->get('views/signin', 'SigninController::index');
 $routes->get('attractions/views/signin', 'SigninController::index');
-$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+// $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/', 'SignupController::index');
 $routes->get('/signup', 'SignupController::index');
 $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
 $routes->get('/signin', 'SigninController::index');
-$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+// $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+// $routes->match(['get','post'], 'views/admin/dataManagement.php', 'UserController::index', ['filter' => 'authGuard']);
 
 
 
@@ -89,7 +89,7 @@ $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 
 
 
- 
+
 
 /*
  * --------------------------------------------------------------------
@@ -98,10 +98,43 @@ $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
  */
 
 
-$routes->match(['get','post'],'views/admin/attractionsManagement.php', 'AttractionsManagement::index');
-$routes->match(['get','post'],'views/admin/foodManagement.php', 'FoodManagement::index');
-$routes->match(['get','post'],'views/admin/newsManagement.php', 'NewsManagement::index');
-$routes->match(['get','post'],'views/admin/dataManagement.php', 'DataManagement::index');
+// $routes->match(['get','post'],'views/admin/attractionsManagement.php', 'AttractionsManagement::index');
+// $routes->match(['get','post'],'views/admin/foodManagement.php', 'FoodManagement::index');
+// $routes->match(['get','post'],'views/admin/newsManagement.php', 'NewsManagement::index');
+// $routes->match(['get','post'],'views/admin/dataManagement.php', 'DataManagement::index');
+$routes->match(['get', 'post'], 'views/admin/dataManagement.php', 'UserController::index', ['filter' => 'authGuard']);
+$routes->match(['get', 'post'], 'views/admin/attractionsManagement.php', 'TouristCentreController::index', ['filter' => 'authGuard']);
+$routes->match(['get', 'post'], 'views/admin/foodManagement.php', 'FoodController::index', ['filter' => 'authGuard']);
+$routes->match(['get', 'post'], 'views/admin/newsManagement.php', 'NewsController::index', ['filter' => 'authGuard']);
+
+$routes->get('tourist-centre', 'TouristCentreController::create', ['filter' => 'authGuard']);
+$routes->get('tourist-centre/create', 'TouristCentreController::create', ['filter' => 'authGuard']);
+$routes->post('tourist-centre/store', 'TouristCentreController::store', ['filter' => 'authGuard']);
+$routes->post('tourist-centre/delete/(:num)', 'TouristCentreController::delete/$1', ['filter' => 'authGuard']);
+$routes->get('tourist-centre/edit/(:num)', 'TouristCentreController::edit/$1', ['filter' => 'authGuard']);
+
+
+$routes->match(['get', 'post'], 'views/admin/foodManagement.php', 'FoodController::index');
+$routes->get('food-tourism/create', 'FoodController::create', ['filter' => 'authGuard']);
+$routes->post('food-tourism/store', 'FoodController::store', ['filter' => 'authGuard']);
+$routes->post('food-tourism/delete/(:num)', 'FoodController::delete/$1', ['filter' => 'authGuard']);
+$routes->get('food-tourism/edit/(:num)', 'FoodController::edit/$1', ['filter' => 'authGuard']);
+
+
+$routes->match(['get', 'post'], 'views/admin/newsManagement.php', 'NewsController::index', ['filter' => 'authGuard']);
+$routes->get('news/create', 'NewsController::create', ['filter' => 'authGuard']);
+$routes->post('news/store', 'NewsController::store', ['filter' => 'authGuard']);
+$routes->post('news/delete/(:num)', 'NewsController::delete/$1', ['filter' => 'authGuard']);
+$routes->get('news/edit/(:num)', 'NewsController::edit/$1', ['filter' => 'authGuard']);
+
+
+$routes->get('tourist_centre/view/(:num)', 'Attractions::view/$1');
+$routes->get('news/view/(:num)', 'Home::view/$1');
+$routes->get('foods/view/(:num)', 'FoodController::view/$1');
+
+$routes->get('search/results', 'SearchController::results');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
