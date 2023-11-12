@@ -360,7 +360,7 @@
         <div class="copyrights">
 
             <p>&copy;
-                <?= date('Y') ?> Capstone 1
+                <?= date('Y') ?> Department Of Tourism | Tanay Rizal
             </p>
 
         </div>

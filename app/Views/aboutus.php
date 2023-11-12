@@ -345,17 +345,13 @@
     </div>-->
 
         <div class="copyrights">
-
             <p>&copy;
-                <?= date('Y') ?> Capstone 1
+                <?= date('Y') ?> Department Of Tourism | Tanay Rizal
             </p>
-
         </div>
-
     </footer>
 
     <!-- SCRIPTS -->
-
     <script>
         function toggleMenu() {
             var menuItems = document.getElementsByClassName('menu-item');
@@ -364,9 +360,7 @@
                 menuItem.classList.toggle("hidden");
             }
         }
-    </script>
-
-    <!-- -->
+    </script>s
 
 </body>
 

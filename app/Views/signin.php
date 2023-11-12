@@ -56,7 +56,7 @@
       <span class="state">Log in</span>
     </button>
   </form>
-  <footer><a target="blank" href="https://www.facebook.com/tanaytourism">@Capstone 1.0</a></footer>
+  <footer><p>&copy;  <?= date('Y') ?> <a target="blank" href="https://www.facebook.com/tanaytourism">Department Of Tourism | Tanay Rizal</a></p></footer>
   </p>
 </div>
 <script>
