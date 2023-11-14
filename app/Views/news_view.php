@@ -92,6 +92,42 @@
         </div>
     </div>
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>About Us</h4>
+                <p>We are the Department of Tourism in Tanay Rizal. Our mission is to promote tourism in our beautiful town and showcase its natural wonders and cultural heritage.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <p>Address: 123 Main Street, Tanay Rizal</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@tanaytourism.com</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <?= date('Y') ?> Department Of Tourism | Tanay Rizal</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Designed by <a href="#">Your Name</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <footer class="footer">
         <div class="copyrights">
