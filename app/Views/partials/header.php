@@ -3,12 +3,12 @@
 <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css"/>
 <!-- header.html -->
 <header>
-    <h1>Your Website Name</h1>
+    <h1>Department of Tourism Tanay,Rizal</h1>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Attraction</a></li>
+            <li><a href="#">Food|Hub</a></li>
         </ul>
     </nav>
 </header>

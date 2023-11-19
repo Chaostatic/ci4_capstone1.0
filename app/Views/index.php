@@ -4,7 +4,7 @@
 <head>
     <?php $index = 0; ?>
     <meta charset="UTF-8">
-    <title>Department of Tourism of Tanay, Rizal</title>
+    <title>Department of Tourism|Tanay,Rizal</title>
     <link rel="shortcut icon" type="image/png" href="/logo-removebg-preview.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -57,20 +57,17 @@
 
 <body>
     <?php include(APPPATH . 'Views/partials/navbar.php'); ?>
-    <!-- HEADER: MENU + HEROE SECTION -->
+    <!-- HEADER: MENU + HEROE SECTION 
     <header class="p-3">
-            <h1>Welcome to the Department of Tourism Tanay, Rizal</h1>
+            <h1>Department of Tourism | Tanay, Rizal</h1>
         </div>
 
-    </header>
+    </header>-->
 
     <!-- CONTENT -->
     <div class="container-fluid">
         <div class="row p-5">
             <section>
-                <!--pchen66.github.io
-    
-<div class="pano-image"></div>-->
 
 
                 <!-- https://momento360.com -->

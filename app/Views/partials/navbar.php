@@ -19,7 +19,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link <?php if (isset($index) && $index == 2)
-            echo 'active'; ?>" href="<?= site_url('/food'); ?>">Food</a>
+            echo 'active'; ?>" href="<?= site_url('/food'); ?>">Food | Hub</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?php if (isset($index) && $index == 3)
