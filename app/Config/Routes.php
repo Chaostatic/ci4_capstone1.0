@@ -32,6 +32,8 @@ $routes->set404Override();
  * public routes
  * --------------------------------------------------------------------
  */
+
+ 
 $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::index');
 $routes->get('/attractions', 'Attractions::index');
@@ -42,7 +44,7 @@ $routes->get('views/aboutus', 'AboutUs::index');
 
 $routes->get('upload', 'Upload::index');
 $routes->post('upload/upload', 'Upload::upload');
-
+$routes->get('open-ai', 'OpenAIController::chatOpenAi');
 
 
 /*
