@@ -16,7 +16,7 @@ class GeneratorOpenAIService
     public function generateResponseOpenAi(string $question): string
     {
         $response = $this->client->completions()->create([
-            'model' => 'text-davinci-003',
+            'model' => 'gpt-3.5-turbo-instruct',
             'temperature' => 0.9,
             'top_p' => 1,
             'frequency_penalty' => 0,

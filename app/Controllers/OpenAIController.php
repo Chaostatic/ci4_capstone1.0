@@ -3,16 +3,6 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
-class OpenAIController extends BaseController
-{
-    public function index()
-    {
-        <?php
-
-namespace App\Controllers;
-
-use App\Controllers\BaseController;
 use App\Libraries\GeneratorOpenAIService;
 
 class OpenAIController extends BaseController
@@ -38,7 +28,5 @@ class OpenAIController extends BaseController
             'question' => $question,
             'response' => $response
         ]);
-    }
-}
     }
 }

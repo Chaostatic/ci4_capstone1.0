@@ -44,7 +44,7 @@ $routes->get('views/aboutus', 'AboutUs::index');
 
 $routes->get('upload', 'Upload::index');
 $routes->post('upload/upload', 'Upload::upload');
-$routes->get('open-ai', 'OpenAIController::chatOpenAi');
+$routes->get('chatbot', 'OpenAIController::chatOpenAi');
 
 
 /*
